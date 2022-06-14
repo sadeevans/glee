@@ -41,11 +41,13 @@
 
 .user-nav {
   display: flex;
+  padding-right: 10px;
   &__link{
     position: relative;
   }
   &__link + .user-nav__link{
     padding-left: 50px;
+    
   }
   &__num{
     position: absolute;
@@ -76,7 +78,7 @@
     padding: 0 15px;
   }
   &__title{
-    max-width: 415px;
+    max-width: 420px;
     @extend %rubik-500;
     color: $default;
     font-size: 72px;
@@ -130,6 +132,75 @@
             
     }
   }
+
+
+// info
+.info {
+  padding: 48px 0;
+  background-color: #FEF7F0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 74px;
+  &__item {
+    
+  }
+  &__item-title {
+  @extend %dmsans-700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #414141;
+  opacity: 1;
+  }
+  &__item-text {
+  @extend %dmsans-400;
+  line-height: 30px;
+  color: #585858;
+  max-width: 220px;
+  }
+}
+
+// categories
+.title {
+  margin-bottom: 40px;
+}
+
+.categories{
+  &___filter-btn {
+    margin-bottom: 78px;
+    text-align: center;
+  }
+  &__items{
+    display: grid;
+    min-height: 635px;
+    grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 30px;
+
+  }
+  &__item{
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center right;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding: 43px 0 0 38px;
+    max-width: 210px;
+    margin-bottom: 21px;
+    font-weight: 700;
+  }
+  &__item-subtitle{
+  @extend %dmsans-700;
+  
+  line-height: 1.2;
+  color: #a3bbc8;
+  padding-left: 38px;
+  }
+}
 
 
 // footer
