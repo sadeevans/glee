@@ -1,7 +1,18 @@
+html,
+body{
+  height: 100%;
+}
+
 body  {
   font-size: 16px;
   color: $default;
   @extend %dmsans-700;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
@@ -15,3 +26,4 @@ body  {
   margin: 0 auto;
   padding: 0 15px;
 }
+
