@@ -1,12 +1,13 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 // header
 
 .header {
-  padding: 52px 0;
+  padding: 50px 0;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -60,6 +61,75 @@
     text-align: center
   }
 }
+
+// slider
+
+.top-slider{ 
+  &__inner{
+  background-color: $bg;
+  padding: 99px 170px 44px 301px;
+  }
+
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  &__title{
+    max-width: 415px;
+    @extend %rubik-500;
+    color: $default;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    padding-top: 125px;
+  }
+  &__text{
+    max-width: 360px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 30px;
+  }
+  &__link{
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 23px 101px 23px 27px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-right: 160px;
+    li{
+      padding: 0 11px;
+      button{
+        @extend %rubik-500;
+        font-size: 11px;
+        line-height: 8px;
+        color: $default;
+        background-color: #ffffff;
+        opacity: 0.3;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+      }
+            &.slick-active {
+              button {
+                background-color: #ffffff;
+                opacity: 1;
+              }
+            }
+      }
+            
+    }
+  }
 
 
 // footer
