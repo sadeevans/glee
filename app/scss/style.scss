@@ -1,5 +1,234 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
-@import 'madia';
+
+// header
+
+.header {
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 32px;
+  }
+  &__list-link{
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+    transition: all .3s;
+    &:hover{
+      color: #fcd7b6;
+      border-bottom: 1px solid #fcd7b6;
+    }
+  }
+  &__list-link--active {
+    color: $accent;
+    
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__link{
+    position: relative;
+  }
+  &__link + .user-nav__link{
+    padding-left: 50px;
+  }
+  &__num{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fcd7b6;
+    top: -8px;
+    right: -8px;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center
+  }
+}
+
+// slider
+
+.top-slider{ 
+  &__inner{
+  background-color: $bg;
+  padding: 99px 170px 44px 301px;
+  }
+
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  &__title{
+    max-width: 415px;
+    @extend %rubik-500;
+    color: $default;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    padding-top: 125px;
+  }
+  &__text{
+    max-width: 360px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 30px;
+  }
+  &__link{
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 23px 101px 23px 27px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-right: 160px;
+    li{
+      padding: 0 11px;
+      button{
+        @extend %rubik-500;
+        font-size: 11px;
+        line-height: 8px;
+        color: $default;
+        background-color: #ffffff;
+        opacity: 0.3;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+      }
+            &.slick-active {
+              button {
+                background-color: #ffffff;
+                opacity: 1;
+              }
+            }
+      }
+            
+    }
+  }
+
+
+// footer
+
+.footer-top {
+  padding: 79px 0 77px;
+  border-bottom: 1px solid rgba(163, 187, 200, .4); 
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    line-height: 32px;
+    @extend %rubik-400;
+    color: #7b7b7b;
+  }
+  &__contact{
+    width: 220px;
+    margin-right: 110px;
+  }
+  &__nav {
+    width: 140px;
+    margin-right: 150px;
+  }
+  &__item-form {
+    width: 295px;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  &__adress {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__phone,
+  &__email {
+    margin-bottom: 20px;
+  } 
+
+  &__title {
+    line-height: 3;
+    font-size: 16px;
+    margin-bottom: 27px;
+    @extend %dmsans-700;
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+  &__text {
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+  &__form-input {
+    max-width: 170px;
+    width: 100%;
+    opacity: 0.5;
+    background-color: #fcd7b6;
+    border: none;
+    padding: 12px 14px;
+    line-height: 21px;
+    font-size: 14px;
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+      line-height: 1.2;
+      color: #000000;
+    }
+  }
+
+  &__form-btn{
+  border: none;
+  background-color: #a3bbc8;
+  max-width: 100px;
+  width: 100%;
+  @extend %dmsans-400;
+  color: #fff;
+  line-height: 21px;
+  font-size: 14px;
+  padding: 12px 14px;
+  margin-left: -4px;
+  }
+}
+
+.footer-bottom {
+  margin: 37px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #7b7b7b;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .footer-bottom__list-item {
+    padding-left: 32px;
+  }
+}
+
+
+@import 'media';
