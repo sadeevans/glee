@@ -173,8 +173,9 @@
     display: grid;
     min-height: 635px;
     grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 120px;
 
   }
   &__item{
@@ -182,6 +183,9 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center right;
+  }
+  &__item-chair{
+    background-position: center right 20px;
   }
   &__item-title{
     @extend %dmsans-700;
@@ -195,13 +199,24 @@
   }
   &__item-subtitle{
   @extend %dmsans-700;
-  
   line-height: 1.2;
   color: #a3bbc8;
   padding-left: 38px;
   }
 }
-
+.video__inner{
+  background-image: url('../images/video-fon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 701px;
+  margin-bottom: 119px;
+}
+.video__popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 701px;
+}
 
 // footer
 
