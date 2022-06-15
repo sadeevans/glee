@@ -133,7 +133,6 @@
     }
   }
 
-
 // info
 .info {
   padding: 48px 0;
@@ -141,23 +140,99 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 74px;
-  &__item {
-    
-  }
+
   &__item-title {
-  @extend %dmsans-700;
-  font-size: 18px;
-  line-height: 40px;
-  color: #414141;
-  opacity: 1;
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+    opacity: 1;
   }
+
   &__item-text {
-  @extend %dmsans-400;
-  line-height: 30px;
-  color: #585858;
-  max-width: 220px;
+    @extend %dmsans-400;
+    line-height: 30px;
+    color: #585858;
+    max-width: 220px;
   }
 }
+
+
+  //products
+
+.product__items{
+  display: grid;
+  min-height: 802px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+  margin-bottom: 86px;
+ 
+}
+.product-item{
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  &__img-box {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+  }
+  &__images{
+  padding-left: 17px;
+  position: absolute;
+  bottom: 140px;
+  }
+  &__link-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 160px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    width: 180px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(500%);
+    transition: all .3s;
+  }
+    &__link {
+    path {
+      transition: all .3s;
+    }
+    }
+    &__link:hover{
+      path {
+        fill: $bg;
+      }
+ }
+ &:hover{
+  .product-item__link-box{
+    transform: translateY(0); 
+  }
+ }
+ &__title{
+  color: $title;
+  @extend %dmsans-500;
+  line-height: 40px;
+  font-size: 16px;
+  margin: 280px 0 17px;
+ }
+ &__price{
+  font-weight: 700;
+  color: #a3bbc8;
+  margin-bottom: 38px;
+ }
+}
+
+
+
+
 
 // categories
 .title {
@@ -166,7 +241,7 @@
 
 .categories{
   &___filter-btn {
-    margin-bottom: 78px;
+    margin-bottom: 80px;
     text-align: center;
   }
   &__items{
