@@ -619,6 +619,14 @@ display: block;
   border: 2px solid #a3bbc8;
   color: $title;
 }
+
+//register
+&__text {
+  margin-bottom: 30px;
+  @extend %rubik-400;
+  font-size: 14px;
+  color: #436372;
+}
 }
 
 
