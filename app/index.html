@@ -17,7 +17,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link menu__list-link--active" href="#">Home +</a>
+            <a class="menu__list-link menu__list-link--active" href="#">Home</a>
           </li>
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">About</a>
@@ -26,7 +26,7 @@
             <a class="menu__list-link" href="#">Services</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Pages +</a>
+            <a class="menu__list-link" href="#">Pages</a>
           </li>
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">News</a>
@@ -90,37 +90,30 @@
     </div>
   </section>
 
-<!-- info -->
+<!-- information -->
 
-<section class="infomation">
+<section class="information">
   <div class="container">
-    <div class="info">
-      <div class="info__item">
-        <img class="info__item-img" src="images\icons\support.svg" alt="support icon">
-        <div class="info__item-info">
-        <h4 class="info__item-title">Support 24/7.</h4>
-        <p class="info__item-text">Contact us 24 hours a day, 7 days a week.</p>
+    <div class="information__content">
+    <div class="information__items">
+      <div class="information__item information__item--support">
+        <h4 class="information__item-title">Support 24/7.</h4>
+        <p class="information__item-text">Contact us 24 hours a day, 7 days a week.</p>
         </div>
+
+      <div class="information__item information__item--delivery">
+        <h4 class="information__item-title">Delivery.</h4>
+        <p class="information__item-text">Free shipping on all US order.</p>
       </div>
 
-      <div class="info__item">
-        <img class="info__item-img" src="images\icons\delivery.svg" alt="delivery icon">
-        <div class="info__item-info">
-        <h4 class="info__item-title">Delivery.</h4>
-        <p class="info__item-text">Free shipping on all US order.</p>
-        </div>
-      </div>
-
-      <div class="info__item">
-        <img class="info__item-img" src="images\icons\payment.svg" alt="payment icon">
-        <div class="info__item-info">
-        <h4 class="info__item-title">100% Payment secure.</h4>
-        <p class="info__item-text">We ensure secure payment
+      <div class="information__item information__item--payment">
+        <h4 class="information__item-title">100% Payment secure.</h4>
+        <p class="information__item-text">We ensure secure payment
         with PEV.</p>
-        </div>
+      </div>
       </div>
     </div>
-  </div>
+    </div>
 </section>
 
 <!-- products -->
@@ -459,44 +452,44 @@
       <h2 class="title">New Design</h2>
       <div class="categories___filter-btn">
         <button class="categories__btn" data-filter="all">ALL</button>
-        <button class="categories__btn" data-filter=".category-a">Furnitures</button>
+        <button class="categories__btn" data-filter=".category-a".category-a">Furnitures</button>
         <button class="categories__btn" data-filter=".category-b">Chairs</button>
         <button class="categories__btn" data-filter=".category-c">Lighting</button>
         <button class="categories__btn" data-filter=".category-d">Decor</button>
       </div>
     </div>
     <div class="categories__items">
-      <div class="categories__item" style="background-image: url('images/content/sofa.png');">
+      <div class="categories__item mix category-a" style="background-image: url('images/content/sofa.png');">
         <h4 class="categories__item-title">Beat Flat Pendant
         Black</h4>
         <p class="categories__item-subtitle">Classic</p>
       </div>
 
-      <div class="categories__item" style="background-image: url('images/content/bed.png');">
+      <div class="categories__item mix category-a" style="background-image: url('images/content/bed.png');">
         <h4 class="categories__item-title">Lampe Sur Pieds
         Bamboo</h4>
         <p class="categories__item-subtitle">Classic</p>
       </div>
 
-      <div class="categories__item categories__item-chair" style="background-image: url('images/content/chair.png');">
+      <div class="categories__item categories__item-chair mix category-b" style="background-image: url('images/content/chair.png');">
         <h4 class="categories__item-title">Rattan Rocking
         Chair</h4>
         <p class="categories__item-subtitle">Classic</p>
       </div>
 
-      <div class="categories__item" style="background-image: url('images/content/bed-2.png');">
+      <div class="categories__item mix category-c" style="background-image: url('images/content/bed-2.png');">
         <h4 class="categories__item-title">Rattan Rocking
         Chair</h4>
         <p class="categories__item-subtitle">Classic</p>
       </div>
 
-      <div class="categories__item categories__item-chair" style="background-image: url('images/content/chair-2.png');">
+      <div class="categories__item categories__item-chair mix category-b" style="background-image: url('images/content/chair-2.png');">
         <h4 class="categories__item-title">Rattan Rocking
         Chair</h4>
         <p class="categories__item-subtitle">Classic</p>
       </div>
 
-      <div class="categories__item" style="background-image: url('images/content/sofa-2.png');">
+      <div class="categories__item mix category-d" style="background-image: url('images/content/sofa-2.png');">
         <h4 class="categories__item-title">Lampe Sur Pieds
         Bamboo</h4>
         <p class="categories__item-subtitle">Classic</p>
@@ -667,12 +660,12 @@
           </a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">
+            <a class="footer-top__link" href="login.html">
               Login
           </a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">
+            <a class="footer-top__link" href="register.html">
               Register
           </a>
           </li>
@@ -694,7 +687,7 @@
     
     <div class="footer-bottom__item">
       <ul class="footer-bottom__list">
-      <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Home</a></li>
+      <li class="footer-bottom__list-item"><a href="index.html" class="footer-bottom__list-link">Home</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">About</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Blog</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Contact</a></li>

@@ -7,3 +7,8 @@ $(function() {
     autoplaySpeed: 2000
   });
 });
+
+$(function() {
+  var mixer = mixitup('.categories__items');
+});
+
