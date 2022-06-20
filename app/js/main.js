@@ -1,5 +1,15 @@
 $(function() {
+
+  // star
+  $(".star").rateYo({
+    // rating: 3.6,
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
   
+  // фильтр кнопок
   $('.shop-content__filter-btn').on('click', function() {
     $('.shop-content__filter-btn').toggleClass('shop-content__filter-btn--active');
   });
