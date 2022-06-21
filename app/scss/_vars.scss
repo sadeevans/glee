@@ -2,7 +2,7 @@ $accent: #191919;
 $default: #243f4d;
 $title: #243f4d;
 $bg: #fcd7b6;
-$a: #262626;
+$alink: #262626;
 
 
 %dmsans-400 {
@@ -39,3 +39,11 @@ $a: #262626;
   font-family: 'MyriadPro', sans-serif;
   font-weight: 400;
   }
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

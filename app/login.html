@@ -17,7 +17,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link menu__list-link--active" href="#">Home +</a>
+            <a class="menu__list-link menu__list-link--active" href="#">Home</a>
           </li>
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">About</a>
@@ -26,7 +26,7 @@
             <a class="menu__list-link" href="#">Services</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Pages +</a>
+            <a class="menu__list-link" href="#">Pages</a>
           </li>
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">News</a>
@@ -60,16 +60,43 @@
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link-home" href="#">Home</a>
+            <a class="breadcrumbs__link breadcrumbs__link-home" href="index.html">Home</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Log in</a>
+            <a class="breadcrumbs__link" href="login.html">Log in</a>
           </li>
         </ul>
       </div>
     </div>
   </section>
 
+  <section class="modal">
+    <div class="container__block">
+      <form class="modal__form">
+        <label class="modal__label">
+          Username or email address *
+          <input class="modal__input" type="text" required>
+        </label>
+        <label class="modal__label">
+          Password *
+          <input class="modal__input" type="password" required>
+        </label>
+        <button class="modal__btn modal__login" type="submit">Login</button>
+        <div class="modal__block">
+          <label class="modal__label">
+            <input type="checkbox">
+            Remember me
+          </label>
+          <a class="modal__link" href="#">Lost your password?</a>
+        </div>
+        
+        <a class="modal__link modal__link-register" href="register.html">Not registered? No problem</a>
+        <button class="modal__btn modal__account" type="submit">Create an account</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- blog -->
   <section class="blog">
     <div class="container__block">
   <div class="partners">
@@ -92,9 +119,9 @@
     </ul>
   </div>
   </div>
-  
   </section>
 </main>
+
 
 
 
@@ -184,7 +211,7 @@
     
     <div class="footer-bottom__item">
       <ul class="footer-bottom__list">
-      <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Home</a></li>
+      <li class="footer-bottom__list-item"><a href="index.html" class="footer-bottom__list-link">Home</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">About</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Blog</a></li>
       <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Contact</a></li>
