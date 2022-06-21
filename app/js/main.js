@@ -1,5 +1,5 @@
 $(function() {
-
+   
   // star
   $(".star").rateYo({
     // rating: 3.6,
@@ -42,6 +42,8 @@ $(function() {
   var mixer = mixitup('.categories__items');
 });
 
+// filter price catalog
+
 $(function() {
  $('.filter-price__input').ionRangeSlider({
     type: "double",
@@ -60,5 +62,51 @@ $(function() {
       $('.filter-price__to').text(data.to);
         },
     });
+
+
+    // timer
+
+  function getTimeRemaining(endtime) {
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  const clock = document.querySelector('.lighting__clock');
+  const daysSpan = clock.querySelector('.lighting__days');
+  const hoursSpan = clock.querySelector('.lighting__hours');
+  const minutesSpan = clock.querySelector('.lighting__minutes');
+  const secondsSpan = clock.querySelector('.lighting__seconds');
+
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
+}
+
+const deadline = '2022-07-05';
+initializeClock('lighting__clock', deadline);  
 });
 

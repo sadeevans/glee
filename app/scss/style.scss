@@ -189,7 +189,16 @@
 
 
   //products
-
+.product__filter-btn{
+  margin-bottom: 80px;
+  text-align: center;
+  
+}
+.product__btn{
+  background-color: transparent;
+  border: none;
+  color: #8b8b8b;
+}
 .product__items{
   display: grid;
   min-height: 802px;
@@ -294,14 +303,14 @@
     font-size: 26px;
     line-height: 32px;
     color: $title;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
   &__item-text{
     @extend %rubik-400;
     color: $title;
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   &__item-link{
     cursor: pointer;
@@ -313,6 +322,31 @@
     border: 1px solid #436372;
     border-radius: 5px;
     padding: 16px 86px 16px 20px;
+  }
+  &__clock{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__clock-item{
+    background-color: #a3bbc8;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @extend %dmsans-700;
+    font-size: 26px;
+    color: #fff;
+    border: 1px solid #436372;
+
+  }
+  &__smalltext{
+    @extend %rubik-400;
+    color: $title;
+    font-size: 12px;
   }
 }
 
@@ -361,7 +395,7 @@
   padding-left: 38px;
   }
   .mixitup-control-active {
-  border-bottom: 1px solid $bg;
+  border-bottom: 2px solid $bg;
   }
 }
 
@@ -770,6 +804,23 @@
   }
 }
 
+.modal_div {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px;
+}
+
 
 // shop catalog
 
@@ -1022,6 +1073,7 @@
   &__products{
     flex: 0 1 60%;
   }
+
   &__title{
     @extend %rubik-400;
     font-size: 40px;
@@ -1098,4 +1150,3 @@
     padding: 15px 19px;
   }
 }
-
