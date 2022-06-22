@@ -13,6 +13,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__burger{
+    display: none;
+  }
 }
 
 .menu{
@@ -1150,3 +1153,5 @@
     padding: 15px 19px;
   }
 }
+
+@import 'media';

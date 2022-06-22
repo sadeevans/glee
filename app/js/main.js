@@ -1,5 +1,6 @@
 $(function() {
-   
+
+  
   // star
   $(".star").rateYo({
     // rating: 3.6,
@@ -21,6 +22,10 @@ $(function() {
 
   $('.button-grid').on('click', function() {
     $('.product-item').removeClass('product-item--list');
+
+    $('.header__burger').on('click', function(event){
+    $('.menu__list').toggleClass('.menu__list--active');
+  });  
       
   })
 
@@ -31,16 +36,18 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 2000
   });
+
 });
 
 $(function() {
 	$('.select-style').styler();
 });
 
-
+// Стилизация <select>
 $(function() {
   var mixer = mixitup('.categories__items');
 });
+
 
 // filter price catalog
 
